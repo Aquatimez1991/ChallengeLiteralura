@@ -13,11 +13,9 @@ public interface AutorRepository extends JpaRepository<Autor, Long> {
 
     List<Autor> findByFechaDeNacimientoLessThanEqualAndFechaDeMuerteGreaterThanEqual(Integer nacimiento, Integer muerte);
 
-    List<Autor> findByFechaDeNacimientoOrFechaDeMuerte(Integer nacimiento, Integer muerte);
+    List<Autor> findByFechaDeNacimiento(Integer fechaNacimiento);
 
-    @Query("SELECT DISTINCT a FROM Autor a JOIN a.libros l WHERE :idioma MEMBER OF l.idiomas")
-    List<Autor> autoresPorIdioma(String idioma);
+    List<Autor> findByFechaDeMuerte(Integer fechaMuerte);
 
-    @Query("SELECT a FROM Autor a WHERE SIZE(a.libros) >= :cantidad")
-    List<Autor> autoresConMinimoLibros(int cantidad);
+
 }

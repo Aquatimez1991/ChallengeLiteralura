@@ -28,9 +28,7 @@ public class Libro {
             inverseJoinColumns = @JoinColumn(name = "autor_id"))
     private List<Autor> autores = new ArrayList<>();
 
-    @ManyToOne
-    @JoinColumn(name = "autor_id")
-    private Autor autorPrincipal;
+
 
     public Libro() {}
 
@@ -72,13 +70,7 @@ public class Libro {
         this.idiomas = idiomas;
     }
 
-    public Autor getAutorPrincipal() {
-        return autorPrincipal;
-    }
 
-    public void setAutorPrincipal(Autor autorPrincipal) {
-        this.autorPrincipal = autorPrincipal;
-    }
 
     @Override
     public String toString() {
