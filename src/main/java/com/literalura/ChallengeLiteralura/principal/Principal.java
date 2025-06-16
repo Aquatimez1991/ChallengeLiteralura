@@ -65,7 +65,7 @@ public class Principal {
     }
 
     private void buscarLibroApi() {
-        System.out.println(" Ingrese el título del libro a buscar:");
+        System.out.println("Ingrese el título del libro a buscar:");
         String titulo = teclado.nextLine().trim();
         String url = URL_BASE + titulo.replace(" ", "+");
 
@@ -214,7 +214,7 @@ public class Principal {
             teclado.nextLine();
         } catch (InputMismatchException e) {
             System.out.println(" Entrada inválida. Debe ingresar un número entero.");
-            teclado.nextLine(); // limpiar buffer
+            teclado.nextLine();
             return;
         }
 
