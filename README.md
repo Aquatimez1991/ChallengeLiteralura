@@ -82,7 +82,7 @@ Libro guardado correctamente:
 **Elías Jeshua Salgado Coripuna**  
 📍 Perú / Chile  
 🛠️ Soporte técnico | Programador Java | Desarrollador Angular  
-📧 elias.tuemail@ejemplo.com
+📧 esalgadoc@outlook.com
 
 ---
 
