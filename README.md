@@ -2,7 +2,8 @@
 # 📚 Challenge Literalura
 
 Aplicación de consola desarrollada en Java con Spring Boot que permite buscar libros a través de la API
-pública de Gutendex, registrar información en una base de datos y realizar consultas sobre libros y autores.
+pública de Gutendex, registrar información en una base de datos y realizar consultas sobre libros y
+autores.
 
 ---
 
